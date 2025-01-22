@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inicio {
+    display: flex; /* Usando Flexbox */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
+}
+
+.inicio h1 {
+    flex: 1; /* Faz o h1 ocupar o espaço disponível */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove a margem padrão */
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do texto do pai */
+}
+
+i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha */
+    justify-content: space-between; /* Espaçamento entre os cards */
+}
+
+.card {
+    width: 42%; /* Define a largura de cada card para 48% */
+    margin: 10px;
+    margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 1); /* Sombra para os cards */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Para evitar que o conteúdo transborde */
+    border: 2px solid transparent; /* Borda inicial transparente */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.card:hover {
+    border-color: #007BFF; /* Cor da borda ao passar o mouse (pode ser alterada) */
+}
+
+.card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Transição suave para o aumento da imagem */
+}
+
+.card.active img {
+    transform: scale(1.2); /* Aumenta a imagem em 20% quando o card está ativo */
+}
+
+.card h1, h2 {
+    font-size: 16px;
+    margin: 14px;
+}

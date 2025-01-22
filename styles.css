@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inicio {
+    display: flex; /* Usando Flexbox */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
+}
+
+h1 {
+    flex: 1; /* Faz o h1 ocupar o espaço disponível */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove a margem padrão */
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do texto do pai */
+}
+
+i {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+.sua-turma {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    margin: 20px;
+    gap: 8px;
+    margin-bottom: 1px grey;
+}
+
+.selecao {
+    margin-right: 20px; /* Espaçamento entre a imagem e os textos */
+}
+
+.imagem-selecao {
+    width: 55px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Torna a imagem circular, se desejado */
+}
+
+.textos {
+    text-align: center; /* Centraliza o texto dentro do div */
+    font-size: 12px;
+}
+
+.notificacao {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 22px;
+    gap: 35px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.notificacao h3 {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    left: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute; /* Posiciona o slider */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    top: 0; /* Alinha o slider ao topo */
+    left: 0; /* Alinha o slider à esquerda */
+    right: 0; /* Alinha o slider à direita */
+    bottom: 0; /* Alinha o slider à parte inferior */
+    background-color: #ccc; /* Cor de fundo do slider */
+    transition: .4s; /* Transição suave para a mudança de estado */
+    border-radius: 20px; /* Arredonda os cantos do slider */
+}
+
+.slider:before {
+    position: absolute; /* Posiciona o círculo do slider */
+    content: ""; /* Necessário para o pseudo-elemento */
+    height: 16px; /* Altura do círculo */
+    width: 16px; /* Largura do círculo */
+    left: 2px; /* Alinha o círculo à esquerda */
+    bottom: 2px; /* Alinha o círculo à parte inferior */
+    background-color: white; /* Cor de fundo do círculo */
+    border-radius: 50%; /* Torna o círculo redondo */
+    transition: .4s; /* Transição suave para a mudança de estado */
+}
+
+/* Estilo para o switch quando está ativado */
+input:checked + .slider {
+    background-color: #2196F3; /* Cor de fundo do slider quando ativado */
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px); /* Move o círculo para a direita quando ativado */
+}
+
+.notifi h4 {
+    margin: 14px;
+}
+
+.notif h3 {
+    font-size: 14px;
+}
+
+.notif {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 8px;
+    gap: 35px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
